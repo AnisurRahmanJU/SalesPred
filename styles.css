@@ -1,0 +1,28 @@
+/* Style for buttons */
+.btn-process-demo {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 10px;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.result-box {
+    white-space: pre-wrap;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Light color style for demo data */
+.demo-result-box {
+    background-color: #f0f8ff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    color: #333;
+}
