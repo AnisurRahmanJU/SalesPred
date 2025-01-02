@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV থেকে বিক্রির প্রেডিকশন</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script> <!-- PapaParse Library -->
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">CCSV থেকে বিক্রির প্রেডিকশন</h2>
+
+    <!-- File Upload -->
+    <div class="mt-3">
+        <input type="file" id="csvFile" class="form-control" accept=".csv">
+    </div>
+
+    <!-- Buttons for Demo CSV and Process CSV -->
+    <div class="mt-3 text-center">
+        <button class="btn btn-info btn-process-demo" onclick="displayDemoCSV()">ডেমো CSV দেখুন</button>
+        <button class="btn btn-primary btn-process-demo" onclick="processCSV()">CSV প্রসেস করুন</button>
+        <button class="btn btn-success btn-process-demo" onclick="processDemoData()">ডেমো ডেটা প্রসেস করুন</button>
+    </div>
+
+    <!-- Display CSV content -->
+    <div class="mt-3">
+        <h4>ডেমো CSV ডেটা:</h4>
+        <pre id="demoCSVContent" class="result-box"></pre>
+    </div>
+
+    <!-- Processed Data -->
+    <div class="mt-4">
+        <h4>প্রেডিক্টেড ডেমো ফলাফল:</h4>
+        <pre id="processedData" class="result-box"></pre>
+    </div>
+
+    <!-- Prediction Result -->
+    <div class="mt-4">
+        <div id="predictionResult"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
